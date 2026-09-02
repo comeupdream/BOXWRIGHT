@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="en" data-theme="signature">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Boxwright Gift Kits</title>
+<meta name="description" content="Build a corporate gift package from 60+ stock items — jackets, tumblers, cubes, stamps, stickers and more. Pick quantities, get an instant itemised quote with real volume breaks, decoration and assembly costs.">
+<meta name="color-scheme" content="light dark">
+<meta property="og:title" content="Boxwright Co. — Corporate Gift Packages, Assembled">
+<meta property="og:description" content="Configure an assortment, set quantities, get an instant itemised quote.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#configure">Skip to the package builder</a>
+
+<!-- Icon sprite. One stroke system, 24px grid, 1.6 weight — no emoji anywhere. -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <g id="_s" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></g>
+  </defs>
+  <symbol id="i-apparel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7.5 4 4 6l1.6 4.2 2-.9V20h8.8v-10.7l2 .9L20 6l-3.5-2h-1.9a2.6 2.6 0 0 1-5.2 0Z"/></symbol>
+  <symbol id="i-drinkware" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h10l-1.1 18H8.1Z"/><path d="M7.4 8.5h9.2"/></symbol>
+  <symbol id="i-desk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20.2 5.1 16 16.4 4.7a2.1 2.1 0 0 1 3 3L8.1 19Z"/><path d="M14.4 6.7l3 3"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="3.5" width="17" height="17" rx="2"/><path d="M3.5 9.2h17M3.5 14.8h17M9.2 3.5v17M14.8 3.5v17"/></symbol>
+  <symbol id="i-smallgoods" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20.6 12.4 12.4 20.6a2 2 0 0 1-2.8 0l-6.2-6.2a2 2 0 0 1-.6-1.4V4.4c0-.8.6-1.4 1.4-1.4h8.6c.5 0 1 .2 1.4.6l6.4 6.4a2 2 0 0 1 0 2.8Z"/><circle cx="7.6" cy="7.6" r="1.3"/></symbol>
+  <symbol id="i-consumables" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9.5h13V15a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5Z"/><path d="M17 11h1.6a2.4 2.4 0 0 1 0 4.8H17"/><path d="M8 3v2.6M12.4 3v2.6"/></symbol>
+  <symbol id="i-tech" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M13.2 2.5 4.5 14h6.6l-1 7.5L19.5 10h-6.6Z"/></symbol>
+  <symbol id="i-box" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.8 3.2 7.4v9.2L12 21.2l8.8-4.6V7.4Z"/><path d="M3.2 7.4 12 12l8.8-4.6M12 12v9.2"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m4.5 12.5 5 5.2L19.5 6.5"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6 18 18M18 6 6 18"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 6.8v5.6l3.6 2.1"/></symbol>
+  <symbol id="i-truck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2.8 5.8h11v10.4h-11Z"/><path d="M13.8 9.2h3.9l3.5 3.6v3.4h-7.4"/><circle cx="7" cy="18.4" r="1.9"/><circle cx="17.4" cy="18.4" r="1.9"/></symbol>
+  <symbol id="i-sparkle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 1.9 5.6L19.5 10.5l-5.6 1.9L12 18l-1.9-5.6L4.5 10.5l5.6-1.9Z"/></symbol>
+  <symbol id="i-alert" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.4 21.6 20H2.4Z"/><path d="M12 9.8v4.6M12 17.3v.2"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3.2" y="5" width="17.6" height="16" rx="2"/><path d="M3.2 10h17.6M8 2.8v4.2M16 2.8v4.2"/></symbol>
+  <symbol id="i-printer" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 8.5V3h10v5.5"/><path d="M7 17.5H5a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-2"/><path d="M7 14h10v7H7z"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="8.5" y="8.5" width="12" height="12" rx="2"/><path d="M4.5 16.2V5.5a1.5 1.5 0 0 1 1.5-1.5h10.2"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M4.2 4.2l1.6 1.6M18.2 18.2l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.2 19.8l1.6-1.6M18.2 5.8l1.6-1.6"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 14.6A8.6 8.6 0 0 1 9.4 3.5a8.6 8.6 0 1 0 11.1 11.1Z"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 5.5v13M5.5 12h13"/></symbol>
+  <symbol id="i-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9.5 6 6 6-6"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.8 4.5 5.8v6c0 4.6 3.1 8 7.5 9.4 4.4-1.4 7.5-4.8 7.5-9.4v-6Z"/><path d="m8.8 12 2.3 2.4 4.1-4.6"/></symbol>
+  <symbol id="i-tag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 12.5 12 21l8.5-8.5V3.5H12Z"/><circle cx="16.4" cy="7.6" r="1.4"/></symbol>
+  <symbol id="i-trend" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 16.5 9 11l4 4 7.5-7.5"/><path d="M15.5 7.5h5v5"/></symbol>
+</svg>
+
+<div class="ribbon" aria-hidden="true"></div>
+
+<header class="site-header" id="top">
+  <div class="wrap header-in">
+    <a class="brand" href="#top" aria-label="Boxwright Co. home">
+      <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+        <rect x="4.5" y="14" width="31" height="21.5" rx="2.5" fill="none" stroke="var(--brand-fill)" stroke-width="2.4"/>
+        <path d="M3 14h34v6.5H3z" fill="var(--brand-fill)" opacity=".14"/>
+        <path d="M20 14v21.5" stroke="var(--accent)" stroke-width="3"/>
+        <path d="M3 14h34" stroke="var(--brand-fill)" stroke-width="2.4" stroke-linecap="round"/>
+        <path d="M20 13.4c-3.6-1.1-8.6-3.2-7-6.6 1.4-3 5.7-.4 7 6.6Zm0 0c3.6-1.1 8.6-3.2 7-6.6-1.4-3-5.7-.4-7 6.6Z" fill="none" stroke="var(--accent)" stroke-width="2.2" stroke-linejoin="round"/>
+      </svg>
+      <span>
+        <span class="brand-name">Boxwright<span style="color:var(--accent-text)">.</span></span>
+        <span class="brand-sub">Gift programs</span>
+      </span>
+    </a>
+
+    <nav class="nav" aria-label="Primary">
+      <a href="#presets">Packages</a>
+      <a href="#configure">Build a kit</a>
+      <a href="#catalog">Catalogue</a>
+      <a href="#how">How it works</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+
+    <div class="header-tools">
+      <div class="picker">
+        <button class="picker-btn" id="themeBtn" aria-haspopup="true" aria-expanded="false" aria-controls="themeMenu">
+          <span class="swatch" aria-hidden="true"></span>
+          <span id="themeBtnLabel">Signature</span>
+          <svg class="chev" aria-hidden="true"><use href="#i-chev"/></svg>
+        </button>
+        <div class="picker-menu" id="themeMenu" role="dialog" aria-label="Seasonal theme" hidden>
+          <h4>Seasonal theme</h4>
+          <div id="themeList" role="radiogroup" aria-label="Theme"></div>
+          <div class="mode-row" role="group" aria-label="Appearance">
+            <button type="button" data-mode="light" aria-pressed="false">Light</button>
+            <button type="button" data-mode="dark" aria-pressed="false">Dark</button>
+            <button type="button" data-mode="system" aria-pressed="true">System</button>
+          </div>
+        </div>
+      </div>
+      <a class="btn btn--primary header-cta" href="#request">Get a quote</a>
+    </div>
+  </div>
+  <!-- Narrow screens lose the inline nav; this scrollable strip keeps every
+       section one tap away instead of stranding them. -->
+  <nav class="nav-mobile" aria-label="Sections">
+    <a href="#presets">Packages</a>
+    <a href="#configure">Build a kit</a>
+    <a href="#catalog">Catalogue</a>
+    <a href="#how">How it works</a>
+    <a href="#faq">FAQ</a>
+    <a href="#request" class="is-cta">Get a quote</a>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- ── Hero ────────────────────────────────────────────────────────────── -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">Corporate gifting, assembled in-house</span>
+        <h1>Gift packages your people actually <em>keep</em>.</h1>
+        <p class="lede">Jackets, tumblers, speed cubes, wax seals, sticker sets, custom stamps — sixty-odd stock pieces you assort into one kit. Set the quantities and the quote updates as you go: real volume breaks, decoration setups, assembly labour and freight, itemised, before anyone talks to a salesperson.</p>
+        <div class="hero-cta">
+          <a class="btn btn--primary" href="#configure">Build your package</a>
+          <a class="btn btn--ghost" href="#catalog">Browse the catalogue</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong class="num" id="statItems">64</strong><span>stock items, 7 categories</span></div>
+          <div><strong class="num">12</strong><span>kit minimum</span></div>
+          <div><strong class="num">3–5</strong><span>weeks typical lead</span></div>
+          <div><strong class="num">100%</strong><span>assembled in-house</span></div>
+        </div>
+      </div>
+
+      <aside class="kit-card" id="heroCard" aria-label="Example package">
+        <div class="kit-card-head">
+          <strong id="heroCardName">Holiday Client Gift</strong>
+          <span id="heroCardTag">Best seller</span>
+        </div>
+        <div class="kit-items" id="heroCardItems"></div>
+        <div class="kit-card-foot">
+          <small id="heroCardMeta">per kit, 250 kits</small>
+          <b class="num" id="heroCardPrice">—</b>
+        </div>
+        <button class="btn btn--primary btn--block" id="heroCardLoad" style="margin-top:16px">Load this kit into the builder</button>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ── Presets ─────────────────────────────────────────────────────────── -->
+  <section class="section section--tint" id="presets">
+    <div class="wrap">
+      <div class="section-head section--row">
+        <div>
+          <span class="eyebrow">Start here</span>
+          <h2>Six packages that already work</h2>
+          <p class="lede">Each one is a real assortment with real quantities. Load it, then swap anything — the quote follows you.</p>
+        </div>
+      </div>
+      <div class="presets" id="presetGrid"></div>
+    </div>
+  </section>
+
+  <!-- ── Builder ─────────────────────────────────────────────────────────── -->
+  <section class="section" id="configure">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">The builder</span>
+        <h2>Assort your package</h2>
+        <p class="lede">Pick a category, pick the item, pick how it's branded, pick how many go in each kit. Everything below is priced live.</p>
+      </div>
+
+      <div class="builder">
+        <div>
+          <!-- Step 1 — the run -->
+          <div class="card">
+            <div class="card-head">
+              <h3><span class="step-no num">1</span> The run</h3>
+              <p>How many kits, and how fast</p>
+            </div>
+            <div class="card-body">
+              <div class="setup-row">
+                <div class="field">
+                  <label for="kitsSel">Number of kits</label>
+                  <select class="control" id="kitsSel">
+                    <option value="12">12 kits</option>
+                    <option value="25">25 kits</option>
+                    <option value="50">50 kits</option>
+                    <option value="100" selected>100 kits</option>
+                    <option value="250">250 kits</option>
+                    <option value="500">500 kits</option>
+                    <option value="1000">1,000 kits</option>
+                    <option value="2500">2,500 kits</option>
+                    <option value="custom">Custom…</option>
+                  </select>
+                  <input class="control" id="kitsCustom" type="number" min="12" step="1" placeholder="Enter kit count" hidden aria-label="Custom kit count">
+                </div>
+                <div class="field">
+                  <label for="occasionSel">Occasion</label>
+                  <select class="control" id="occasionSel">
+                    <option>Employee onboarding</option>
+                    <option>Holiday / end of year</option>
+                    <option>Client appreciation</option>
+                    <option>Conference or trade show</option>
+                    <option>Work anniversary / milestone</option>
+                    <option>Company offsite</option>
+                    <option>Customer launch gift</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="shipSel">Delivery</label>
+                  <select class="control" id="shipSel"></select>
+                  <small id="shipNote"></small>
+                </div>
+                <div class="field">
+                  <span class="field-label">Rush production</span>
+                  <label class="switch" style="min-height:42px">
+                    <input type="checkbox" id="rushChk">
+                    <span class="track" aria-hidden="true"></span>
+                    <span style="font-size:13.5px;font-weight:550" id="rushLabel">Standard</span>
+                  </label>
+                  <small>+18% on goods &amp; assembly, roughly halves the lead time.</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 2 — the assortment -->
+          <div class="card">
+            <div class="card-head">
+              <h3><span class="step-no num">2</span> The assortment</h3>
+              <p id="lineCount">0 items</p>
+            </div>
+            <div class="card-body">
+              <div class="line-head" aria-hidden="true">
+                <span></span><span>Category</span><span>Item</span><span>Branding</span><span>Per kit</span><span class="r">Line total</span><span></span>
+              </div>
+              <div class="lines" id="lines"></div>
+              <div class="lines-actions">
+                <button class="btn btn--sm" id="addLine"><svg width="14" height="14" aria-hidden="true"><use href="#i-plus"/></svg> Add an item</button>
+                <button class="btn btn--sm btn--ghost" id="surpriseBtn"><svg width="14" height="14" aria-hidden="true"><use href="#i-sparkle"/></svg> Surprise me</button>
+                <button class="btn btn--sm btn--ghost" id="clearLines">Clear all</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 3 — presentation -->
+          <div class="card">
+            <div class="card-head">
+              <h3><span class="step-no num">3</span> Presentation</h3>
+              <p>The unboxing is half the gift</p>
+            </div>
+            <div class="card-body">
+              <div class="inline-2" style="margin-bottom:16px">
+                <div class="field">
+                  <label for="pkgSel">Kit packaging</label>
+                  <select class="control" id="pkgSel"></select>
+                  <small id="pkgNote"></small>
+                </div>
+                <div class="field">
+                  <label for="fillSel">Interior fill</label>
+                  <select class="control" id="fillSel"></select>
+                  <small>Protects the goods and sets the reveal.</small>
+                </div>
+              </div>
+              <span class="field-label" style="display:block;margin-bottom:8px">Finishing touches</span>
+              <div class="addons" id="addonList"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Live quote -->
+        <aside class="quote">
+          <div class="quote-card">
+            <div class="quote-hero">
+              <span class="lbl">Landed cost per kit</span>
+              <div class="quote-per">
+                <b class="num" id="perKit" aria-live="polite">$0.00</b>
+                <span id="perKitSub">add items to price the kit</span>
+              </div>
+              <div class="quote-sum">
+                <span id="totalLabel">Program total — 100 kits</span>
+                <b class="num" id="grandTotal">$0.00</b>
+              </div>
+            </div>
+
+            <div class="quote-rows" id="quoteRows"></div>
+
+            <div class="insight" id="insight" hidden></div>
+
+            <div class="alerts" id="alerts"></div>
+
+            <div class="quote-meta" id="quoteMeta"></div>
+
+            <div class="budget">
+              <div class="budget-top">
+                <label class="field-label" for="budgetInput">Target per kit</label>
+                <input class="control budget-input" id="budgetInput" type="number" min="0" step="5" value="85" aria-label="Target cost per kit">
+              </div>
+              <div class="bar" id="budgetBar"><i style="width:0%"></i></div>
+              <div class="budget-note" id="budgetNote"><span>Set a target to track against.</span></div>
+            </div>
+
+            <div class="quote-actions">
+              <a class="btn btn--primary btn--block" href="#request" id="requestBtn">Request this quote</a>
+              <div class="quote-mini">
+                <button class="btn btn--sm" id="copyBtn"><svg width="13" height="13" aria-hidden="true"><use href="#i-copy"/></svg> Copy</button>
+                <button class="btn btn--sm" id="printBtn"><svg width="13" height="13" aria-hidden="true"><use href="#i-printer"/></svg> Print</button>
+              </div>
+            </div>
+
+            <p class="quote-foot">Estimate only — binding once we review artwork and confirm stock. Excludes sales tax and duties. Quantity breaks, decoration setups, assembly and freight are all shown above; nothing is added at invoice.</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Catalogue ───────────────────────────────────────────────────────── -->
+  <section class="section section--tint" id="catalog">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">The catalogue</span>
+        <h2>Everything that goes in a box</h2>
+        <p class="lede">Prices shown are per unit at the lowest break, before decoration. Add anything straight to your build.</p>
+      </div>
+      <div class="filters" id="catFilters"></div>
+      <div class="catalog" id="catalogGrid"></div>
+    </div>
+  </section>
+
+  <!-- ── How it works ────────────────────────────────────────────────────── -->
+  <section class="section" id="how">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Process</span>
+        <h2>Four steps, one point of contact</h2>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <h3>Configure &amp; quote</h3>
+          <p>Build the assortment here. What you see is what we quote — we do not discover new fees at invoice.</p>
+        </div>
+        <div class="step">
+          <h3>Proof the artwork</h3>
+          <p>Send a vector logo. You get a physical or digital proof per decorated item before anything runs, included.</p>
+        </div>
+        <div class="step">
+          <h3>Produce &amp; assemble</h3>
+          <p>Goods land at our facility, get inspected, then hand-kitted, filled, sealed and labelled. Photos before we ship.</p>
+        </div>
+        <div class="step">
+          <h3>Ship &amp; track</h3>
+          <p>One pallet to your office, or a link that collects recipient addresses and drop-ships each kit with tracking.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Request ─────────────────────────────────────────────────────────── -->
+  <section class="section section--tint" id="request">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Next step</span>
+        <h2>Send it to a human</h2>
+        <p class="lede">We'll confirm stock, check your artwork against each decoration method, and come back with a firm quote — usually the same business day.</p>
+      </div>
+      <div class="request">
+        <form class="card" id="quoteForm" novalidate>
+          <div class="card-body">
+            <div class="form-grid">
+              <div class="field"><label for="fName">Your name</label><input class="control" id="fName" name="name" autocomplete="name" required></div>
+              <div class="field"><label for="fCompany">Company</label><input class="control" id="fCompany" name="company" autocomplete="organization" required></div>
+              <div class="field"><label for="fEmail">Work email</label><input class="control" id="fEmail" name="email" type="email" autocomplete="email" required></div>
+              <div class="field"><label for="fDate">In-hands date</label><input class="control" id="fDate" name="date" type="date"></div>
+              <div class="field span-2">
+                <label for="fArt">Artwork status</label>
+                <select class="control" id="fArt">
+                  <option>Vector logo ready to send</option>
+                  <option>Raster / PNG only — may need redraw</option>
+                  <option>Need design help</option>
+                  <option>Blank goods, no decoration</option>
+                </select>
+              </div>
+              <div class="field span-2"><label for="fNotes">Anything else</label><textarea class="control" id="fNotes" placeholder="Sizing spread, recipient list format, budget ceiling, brand guidelines…"></textarea></div>
+            </div>
+            <button class="btn btn--primary btn--block" type="submit" style="margin-top:16px">Send my configuration</button>
+            <div class="confirm" id="confirmBox" role="status"></div>
+            <p style="font-size:11.5px;color:var(--ink-3);margin-top:12px">This demo runs entirely in your browser — the form does not transmit anything. Your build is saved locally so you can come back to it.</p>
+          </div>
+        </form>
+
+        <div class="summary-sheet" id="sheet">
+          <div class="sheet-head">
+            <div>
+              <strong style="font-family:var(--serif);font-size:19px;display:block">Configuration summary</strong>
+              <small style="color:var(--ink-3);font-size:12px" id="sheetSub">—</small>
+            </div>
+            <div class="ref" id="sheetRef">REF —</div>
+          </div>
+          <div class="sheet-lines" id="sheetLines"></div>
+          <div id="sheetTotals"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FAQ ─────────────────────────────────────────────────────────────── -->
+  <section class="section" id="faq">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Details</span>
+        <h2>The questions that decide the budget</h2>
+      </div>
+      <div class="faq">
+        <details open><summary>Why is my per-kit price higher than the item prices add up to?</summary><p>Three things sit on top of goods: decoration (a per-unit rate plus a one-time setup for each screen, die or mold), assembly labour at $2.65–$4.50 per kit depending on volume, and packaging plus freight. The quote panel breaks out every one of them, and the setup fees are the reason a 25-kit run costs far more per kit than a 500-kit run of the same assortment.</p></details>
+        <details><summary>What actually drives the lead time?</summary><p>The slowest item in the box. A kit with an embroidered varsity jacket (35 production days) ships on the jacket's schedule no matter how fast the stickers are. Add five assembly days — eight over 500 kits — and that's your date. Rush cuts production roughly in half, with an eight-day floor we will not promise past.</p></details>
+        <details><summary>Do quantity breaks apply per item or across the order?</summary><p>Per item, on total units of that line — 100 kits with two pens each is 200 pens and prices at the 100+ break. Decoration stays flat per unit because a screen prints at the same speed either way. Separately, orders over $10,000 in goods earn a 3–7% program discount on the merchandise subtotal.</p></details>
+        <details><summary>Can you ship to each recipient individually?</summary><p>Yes. Choose individual drop-ship and we'll send a link that collects addresses, sizes and dietary notes, then ship each kit with its own tracking. Domestic runs about $9.40 a kit; mixed-international is estimated at $26 with duties quoted separately once the destination list is in.</p></details>
+        <details><summary>What about apparel sizing?</summary><p>Size collection happens on the same recipient form. For bulk-to-one-address runs we default to a standard curve (S 10% / M 25% / L 30% / XL 22% / 2XL 10% / 3XL 3%) and you can override it. Extended sizes above 2XL carry a small upcharge that we quote explicitly rather than burying.</p></details>
+        <details><summary>Is there a minimum?</summary><p>Twelve kits, and each individual item carries its own factory minimum — soft-enamel pins start at 100 units, knit socks at 50, most apparel at 12–24. The builder flags any line that falls under, rather than quoting a number a factory would refuse.</p></details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="brand" style="margin-bottom:12px">
+          <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+            <rect x="4.5" y="14" width="31" height="21.5" rx="2.5" fill="none" stroke="var(--brand-fill)" stroke-width="2.4"/>
+            <path d="M20 14v21.5" stroke="var(--accent)" stroke-width="3"/>
+            <path d="M3 14h34" stroke="var(--brand-fill)" stroke-width="2.4" stroke-linecap="round"/>
+          </svg>
+          <span class="brand-name">Boxwright<span style="color:var(--accent-text)">.</span></span>
+        </div>
+        <p style="font-size:13.5px;color:var(--ink-2);max-width:34ch">Corporate gift packages, sourced, decorated, kitted and shipped from one building in Los Angeles.</p>
+      </div>
+      <div><h5>Packages</h5><ul id="footPresets"></ul></div>
+      <div><h5>Catalogue</h5><ul id="footCats"></ul></div>
+      <div><h5>Company</h5><ul>
+        <li><a href="#how">How it works</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#request">Request a quote</a></li>
+        <li><a href="#configure">Build a kit</a></li>
+      </ul></div>
+    </div>
+    <div class="foot-bar">
+      <span>© <span id="year">2026</span> Boxwright Co. — a demonstration storefront. Pricing is modelled, not contractual.</span>
+      <span>Los Angeles, CA · hello@boxwright.example</span>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="catalog.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
