@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" preserveAspectRatio="xMidYMid slice" role="img" aria-label="People and community">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1c1a17"/><stop offset="1" stop-color="#6b3d2a"/></linearGradient></defs>
+  <rect width="600" height="800" fill="url(#g)"/>
+  <g fill="#f2b441" fill-opacity=".85"><circle cx="220" cy="330" r="46"/><circle cx="360" cy="300" r="52"/><path d="M130 520c20-70 70-110 90-110s70 40 90 110zM270 520c20-80 70-130 90-130s80 50 100 130z"/></g>
+</svg>

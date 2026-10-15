@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Warm festival evening in an Indian city">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2b1d3a"/><stop offset=".45" stop-color="#7a2f3d"/><stop offset=".75" stop-color="#d9781f"/><stop offset="1" stop-color="#f2b441"/></linearGradient>
+    <radialGradient id="sun" cx=".62" cy=".62" r=".35"><stop offset="0" stop-color="#ffd27a" stop-opacity=".95"/><stop offset="1" stop-color="#ffd27a" stop-opacity="0"/></radialGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1d1410" stop-opacity=".2"/><stop offset="1" stop-color="#140f0c"/></linearGradient>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse"><circle cx="13" cy="13" r="1.4" fill="#fff" opacity=".18"/></pattern>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#sky)"/>
+  <rect width="1600" height="1000" fill="url(#sun)"/>
+  <rect width="1600" height="1000" fill="url(#dots)"/>
+  <g fill="none" stroke="#ffe6a8" stroke-opacity=".35">
+    <circle cx="1000" cy="620" r="180" stroke-width="2"/><circle cx="1000" cy="620" r="250" stroke-width="1.2"/><circle cx="1000" cy="620" r="330" stroke-width=".8"/>
+  </g>
+  <g fill="#1d1410" opacity=".85">
+    <path d="M0 760h90v-60h40v-40h50v100h60v-140l30-30 30 30v140h70v-80h50v-50h40v130h80v-110h60v110h50v-170h30l20-40 20 40h30v170h90v-90h60v90h70v-60h50v-70h40v130h60v-120h70v120h50v-80h60v80h90v-140h40v140h60v-60h50v60h100v-100h30v-40l20-30 20 30v40h30v100h110v240H0z"/>
+    <path d="M700 590l30-100 30 100zM1180 560l25-90 25 90zM1420 600l20-70 20 70z"/>
+  </g>
+  <rect y="720" width="1600" height="280" fill="url(#ground)"/>
+  <g fill="#ffd27a">
+    <circle cx="240" cy="820" r="6" opacity=".9"/><circle cx="410" cy="850" r="5" opacity=".8"/><circle cx="560" cy="815" r="7" opacity=".9"/><circle cx="760" cy="860" r="5" opacity=".7"/><circle cx="930" cy="830" r="6" opacity=".9"/><circle cx="1140" cy="870" r="5" opacity=".8"/><circle cx="1320" cy="825" r="7" opacity=".9"/><circle cx="1480" cy="855" r="5" opacity=".8"/>
+  </g>
+</svg>

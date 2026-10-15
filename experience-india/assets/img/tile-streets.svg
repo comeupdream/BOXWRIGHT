@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Streets and everyday life">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0f6b6e"/><stop offset="1" stop-color="#f2b441"/></linearGradient></defs>
+  <rect width="600" height="800" fill="url(#g)"/>
+  <g fill="#1c1a17" fill-opacity=".55"><path d="M0 560h60v-80h40v40h50v-120h60v160h50v-60h60v-40h40v100h70v-140h50v140h60v-70h60v70v240H0z"/></g><g stroke="#fff" stroke-opacity=".5" stroke-width="2" fill="none"><path d="M60 250q240 120 480 0"/><path d="M60 300q240 120 480 0"/></g><g fill="#fff"><circle cx="150" cy="292" r="6"/><circle cx="300" cy="336" r="6"/><circle cx="450" cy="292" r="6"/></g>
+</svg>

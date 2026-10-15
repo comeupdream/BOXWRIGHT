@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }} | {{ brand.name }}</title>
+  <meta name="description" content="{{ page.description }}">
+  <link rel="canonical" href="{{ page.canonical }}">
+  {{#if page.noindex}}<meta name="robots" content="noindex">{{/if}}
+  <meta name="theme-color" content="#1c1a17">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{ brand.name }}">
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:description" content="{{ page.description }}">
+  <meta property="og:url" content="{{ page.canonical }}">
+  <meta property="og:image" content="{{ brand.url }}/assets/img/og-default.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/site.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "{{ brand.name }}",
+    "url": "{{ brand.url }}",
+    "slogan": "{{ brand.tagline }}",
+    "email": "{{ brand.email }}",
+    "sameAs": ["{{ social.tiktok }}", "{{ social.instagram }}", "{{ social.youtube }}"]
+  }
+  </script>
+  {{#if analytics.ga4}}
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ analytics.ga4 }}"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','{{ analytics.ga4 }}');</script>
+  {{/if}}
+  {{#if analytics.plausibleDomain}}
+  <script defer data-domain="{{ analytics.plausibleDomain }}" src="https://plausible.io/js/script.js"></script>
+  {{/if}}
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>

@@ -89,3 +89,31 @@ with an 8-day floor.
 Signature · Christmas · Easter · Valentine's · St. Patrick's · Independence ·
 Halloween · Harvest · Hanukkah · Lunar New Year · Winter Frost — each in light
 and dark, chosen from the header picker and remembered per browser.
+
+## Experience India (second site in this repo)
+
+`experience-india/` holds a separate static site: **Experience India**, immersive festival journeys plus
+Medical Value Travel facilitation. It has its own README, proposal and build, and shares no code with
+Boxwright.
+
+The root `build.mjs` assembles **one deployable site with both** into `dist/`:
+
+| URL | What |
+|---|---|
+| `/` | Boxwright (these four files, copied as-is) |
+| `/experience-india/` | Experience India, built with every link prefixed for the sub-path |
+
+A slim switcher bar at the top of every page links the two, so you can tab between them. It is injected at
+build time only (`switcher.html`); neither site's source contains it, so remove it from `build.mjs` when
+either site goes to production on its own domain.
+
+```bash
+node build.mjs                          # dist/ with both sites
+npx http-server dist -p 8899            # http://127.0.0.1:8899 and /experience-india/
+cd experience-india && npm run dev      # Experience India alone, at http://localhost:4173
+```
+
+**Deploy on Render:** New → Blueprint → pick this repo and branch → Apply. `render.yaml` defines one static
+service (`boxwright-studio`) that runs `node build.mjs` and publishes `dist/`. Experience India's forms need
+a Formspree / Basin / Apps Script endpoint in `experience-india/site.config.json` before launch; Render has
+no built-in form handling.
