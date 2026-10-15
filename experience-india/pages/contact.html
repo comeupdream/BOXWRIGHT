@@ -1,0 +1,32 @@
+<!--PAGE { "title": "Contact Experience India", "description": "General questions, partnerships and press. For travel interest use the interest list; for medical questions use the private inquiry form.", "nav": "contact" } -->
+<!-- @include partials/head.html -->
+<!-- @include partials/header.html -->
+<section class="section">
+  <div class="container">
+    <div class="section-head"><p class="eyebrow">Contact</p><h1>Say hello.</h1><p class="lede">For general questions, partnerships and press. If you are interested in a journey or in medical travel, the dedicated forms get you a better answer faster.</p></div>
+    <div class="page-cols">
+      <div>
+        <form class="form" name="contact" method="POST" action="{{ forms.contactAction }}" data-netlify="true" netlify-honeypot="bot-field" data-lead="contact" data-success="contact-success">
+          <input type="hidden" name="form-name" value="contact">
+          <input type="hidden" name="source" value="">
+          <p class="hp"><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+          <div class="field-row">
+            <div class="field"><label for="c-name">Name <span class="req">*</span></label><input id="c-name" name="name" required autocomplete="name"></div>
+            <div class="field"><label for="c-email">Email <span class="req">*</span></label><input id="c-email" name="email" type="email" required autocomplete="email"></div>
+          </div>
+          <div class="field"><label for="c-topic">Topic</label><select id="c-topic" name="topic"><option>General question</option><option>Partnership / local host</option><option>Press</option><option>Something else</option></select></div>
+          <div class="field"><label for="c-msg">Message <span class="req">*</span></label><textarea id="c-msg" name="message" required></textarea></div>
+          <button class="btn btn-ink btn-lg" type="submit">Send</button>
+          <p class="fine">Please do not include medical records or sensitive health details. See our <a href="/privacy">privacy policy</a>.</p>
+        </form>
+        <div class="form-success" id="contact-success"><h3>Thanks, we have your message.</h3><p>A person will reply soon.</p></div>
+      </div>
+      <aside>
+        <div class="card"><h3>Email</h3><p><a href="mailto:{{ brand.email }}">{{ brand.email }}</a></p><h3 class="mt-3">Follow the journey</h3><p class="small"><a href="{{ social.tiktok }}" rel="noopener" target="_blank">TikTok</a> · <a href="{{ social.instagram }}" rel="noopener" target="_blank">Instagram</a> · <a href="{{ social.youtube }}" rel="noopener" target="_blank">YouTube</a></p></div>
+        <div class="card card-tint-cultural"><h3>Interested in a journey?</h3><a class="btn btn-cultural btn-block mt-1" href="/waitlist">Join the interest list</a></div>
+        <div class="card card-tint-medical"><h3>Considering treatment in India?</h3><a class="btn btn-medical btn-block mt-1" href="/medical-inquiry">Start a private inquiry</a></div>
+      </aside>
+    </div>
+  </div>
+</section>
+<!-- @include partials/footer.html -->

@@ -1,0 +1,170 @@
+<!--PAGE { "title": "Don't just visit India. Experience India.", "description": "Immersive festival and cultural journeys in India, and non-clinical facilitation for international patients considering healthcare in India. Two paths, one trusted brand.", "nav": "home" } -->
+<!-- @include partials/head.html -->
+<!-- @include partials/header.html -->
+
+<section class="hero">
+  <div class="hero-art" aria-hidden="true">
+    <!-- Swap for licensed footage when ready:
+         <video autoplay muted loop playsinline poster="/assets/img/hero-poster.jpg"><source src="/assets/video/hero.mp4" type="video/mp4"></video> -->
+    <img src="/assets/img/hero-festival.svg" alt="" width="1600" height="1000" fetchpriority="high">
+  </div>
+  <div class="container hero-inner">
+    <p class="eyebrow">Experience India</p>
+    <h1>Don't just visit India. Experience India.</h1>
+    <p class="lede">India is not a checklist. It is a festival you are invited into, a meal made for you, a street that pulls you in. We curate journeys that put you inside the moment, and we help international patients navigate the road to care in India.</p>
+    <div class="actions mt-2">
+      <a class="btn btn-cultural btn-lg" href="/explore-india" data-track="hero_explore">Explore India</a>
+      <a class="btn btn-outline on-dark btn-lg" href="/medical-value-travel" data-track="hero_medical">Medical Value Travel</a>
+    </div>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="container">
+    <div class="paths overlap">
+      <a class="path cultural" href="/explore-india" data-track="path_cultural">
+        <span class="eyebrow cultural">I want to experience India</span>
+        <h3>Explore India</h3>
+        <p>Immersive festival and cultural journeys for small groups. Be part of the celebration, the kitchen and the neighbourhood, not a spectator behind glass.</p>
+        <span class="who">For travelers who want to feel India, not just see it.</span>
+        <span class="go">Explore India <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a class="path medical" href="/medical-value-travel" data-track="path_medical">
+        <span class="eyebrow medical">I am considering treatment in India</span>
+        <h3>Medical Value Travel</h3>
+        <p>Understand how treatment in India works, connect with appropriate hospitals and providers, and get help with the non-clinical logistics around your journey.</p>
+        <span class="who">For patients and families who need a clear, honest guide to the process.</span>
+        <span class="go">Medical Value Travel <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container split">
+    <div class="media" aria-hidden="true">
+      <img src="/assets/img/hero-ganesh.svg" alt="" loading="lazy" width="600" height="750">
+      <span class="caption">Experience India {{ flagship.code }}</span>
+    </div>
+    <div class="reveal">
+      <p class="eyebrow cultural">Featured experience</p>
+      <h2>Experience India {{ flagship.code }}: {{ flagship.name }}</h2>
+      <p class="lede">A {{ flagship.days }}-day immersion built around one of India's most joyful festivals. Ten days of drums, lights, family shrines and street processions, and the calm, colour and food that surround them.</p>
+      <div class="facts mt-2">
+        <div class="fact"><div class="v">{{ flagship.days }}</div><div class="k">Days</div></div>
+        <div class="fact"><div class="v">{{ flagship.groupSize }}</div><div class="k">Travelers</div></div>
+        <div class="fact"><div class="v">{{ flagship.dates }}</div><div class="k">{{ flagship.datesNote }}</div></div>
+        <div class="fact"><div class="v">Open</div><div class="k">Interest list</div></div>
+      </div>
+      <div class="actions mt-3">
+        <a class="btn btn-cultural" href="/{{ flagship.slug }}" data-track="featured_view">See the experience</a>
+        <a class="btn btn-outline" href="/waitlist" data-track="featured_waitlist">Join the interest list</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Why this is different</p>
+      <h2>Tourism shows you India. We put you inside it.</h2>
+      <p class="lede">Conventional tours move you between monuments. Our journeys are built around moments: a festival week, a family's kitchen, a neighbourhood that adopts you for a few days.</p>
+    </div>
+    <div class="grid grid-3">
+      <div class="card reveal"><div class="icon cultural"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v3M5.6 5.6l2.1 2.1M3 12h3M18.4 5.6l-2.1 2.1M21 12h-3"/><path d="M8 20a4 4 0 0 1 8 0"/><circle cx="12" cy="12" r="4"/></svg></div><h3>Built around a festival, not a route</h3><p>Every journey has a heartbeat. You arrive as the city prepares, and you leave after the last procession. The itinerary serves the celebration, not the other way round.</p></div>
+      <div class="card reveal"><div class="icon cultural"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20a6 6 0 0 1 12 0M14 20a4.5 4.5 0 0 1 7 0"/></svg></div><h3>Small group, real people</h3><p>Around {{ flagship.groupSize }} travelers, hosted by people who live there. Small enough to be welcomed into homes and workshops that a coach party never sees.</p></div>
+      <div class="card reveal"><div class="icon cultural"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19h16M6 19V9l6-5 6 5v10"/><path d="M10 19v-5h4v5"/></svg></div><h3>Logistics handled, honestly</h3><p>Hotels, ground transport and the daily plan are arranged for you. What is confirmed is marked confirmed. What is still being finalised is labelled that way, always.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">What you will feel</p>
+      <h2>Festivals. Food. People. Streets.</h2>
+    </div>
+    <div class="strip" aria-hidden="true">
+      <div class="media"><img src="/assets/img/tile-festival.svg" alt="" loading="lazy"><span class="caption">Festivals</span></div>
+      <div class="media"><img src="/assets/img/tile-food.svg" alt="" loading="lazy"><span class="caption">Food</span></div>
+      <div class="media"><img src="/assets/img/tile-people.svg" alt="" loading="lazy"><span class="caption">People</span></div>
+      <div class="media"><img src="/assets/img/tile-streets.svg" alt="" loading="lazy"><span class="caption">Streets</span></div>
+    </div>
+    <p class="small muted mt-4">Original Experience India photography and film will replace these illustrations as we travel. Every image and clip on this site is licensed or our own.</p>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container split reverse">
+    <div class="media" aria-hidden="true">
+      <img src="/assets/img/hero-medical.svg" alt="" loading="lazy" width="600" height="750">
+      <span class="caption">Medical Value Travel</span>
+    </div>
+    <div class="reveal">
+      <p class="eyebrow medical">Medical Value Travel</p>
+      <h2>Considering treatment in India? Start by understanding the journey.</h2>
+      <p class="lede">Many international patients look to India for healthcare. The process can be confusing from abroad. We explain it plainly, help you connect with appropriate hospitals and providers, and coordinate the non-clinical parts: where you stay, how you get around, what paperwork you need.</p>
+      <ul class="checks medical mt-2">
+        <li>Plain-language guide to how medical travel to India works</li>
+        <li>Connection to hospitals and providers appropriate to your inquiry</li>
+        <li>Accommodation, transport and documentation support, where engaged</li>
+        <li>Transparent about what we do, and what only a doctor can do</li>
+      </ul>
+      <div class="actions mt-3">
+        <a class="btn btn-medical" href="/medical-value-travel" data-track="home_mvt_learn">How medical travel works</a>
+        <a class="btn btn-outline" href="/medical-inquiry" data-track="home_mvt_inquiry">Start an inquiry</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">How it works</p>
+      <h2>From a video on your phone to a moment you will never forget.</h2>
+    </div>
+    <ol class="steps row">
+      <li class="step reveal"><h3>Inquiry</h3><p>Join the interest list or send an inquiry. It takes two minutes and commits you to nothing.</p></li>
+      <li class="step reveal"><h3>Consultation</h3><p>We talk. Your dates, your group, what you hope to feel. For medical inquiries, what information is needed next.</p></li>
+      <li class="step reveal"><h3>Reservation</h3><p>Once details are confirmed, you reserve your place or agree the facilitation scope in writing.</p></li>
+      <li class="step reveal"><h3>Preparation</h3><p>Visas, flights, packing, cultural briefings. We prepare you so nothing on the ground is a surprise.</p></li>
+      <li class="step reveal"><h3>Experience</h3><p>You are in India, inside the moment, with people who know the way.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="section section-dark">
+  <div class="container split">
+    <div class="reveal">
+      <p class="eyebrow" style="color:#f2b441">From the founder</p>
+      <p class="quote">"I did not want to sell trips to India. I wanted to build the way I wish people could arrive: invited, prepared, and part of something. And I wanted patients looking at India for care to have one honest place to start."</p>
+      <div class="byline"><span class="avatar" aria-hidden="true"></span><span><strong>{{ brand.founderName }}</strong><br><span class="muted">{{ brand.founderTitle }}</span></span></div>
+      <div class="actions mt-3"><a class="btn btn-outline on-dark" href="/about">Our story</a></div>
+    </div>
+    <div>
+      <h3 style="color:#fff">Who is Experience India?</h3>
+      <p class="muted">An India-focused experience company, founded in the {{ brand.base }}, with two parallel offerings under one brand: curated cultural and festival journeys, and Medical Value Travel facilitation for international patients. Not a tour catalogue. Not a hospital. A guide you can trust on either path.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Questions people ask first</p>
+      <h2>Straight answers.</h2>
+    </div>
+    <div class="faq narrow">
+      <details><summary>Are you a travel agency?</summary><p>No. We design and host a small number of immersive experiences ourselves, starting with {{ flagship.name }}. We do not sell a catalogue of tours or flights.</p></details>
+      <details><summary>Are you a hospital or a medical provider?</summary><p>No. We are a facilitator. We help you understand the process, connect with hospitals and providers in India, and coordinate the non-clinical logistics. Medical evaluation and treatment decisions belong to qualified providers and to you.</p></details>
+      <details><summary>What happens after I submit an inquiry?</summary><p>A person reads it and replies, usually within {{ medical.responseTime }}. For the cultural list, we send details as they are confirmed. For medical inquiries, we explain the next step and what information may be needed. No spam, no pressure.</p></details>
+      <details><summary>When will pricing and the exact itinerary be confirmed?</summary><p>Once hotels, local partners and inclusions are locked in. Until then, the sample itinerary is clearly labelled as a draft and joining the interest list carries no obligation.</p></details>
+    </div>
+    <div class="actions mt-3"><a class="btn btn-outline" href="/faq">All questions</a></div>
+  </div>
+</section>
+
+<!-- @include partials/cta-band.html -->
+<!-- @include partials/footer.html -->

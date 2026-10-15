@@ -1,0 +1,44 @@
+<!--PAGE { "title": "Frequently asked questions", "description": "Answers about Experience India, our cultural journeys, Medical Value Travel facilitation, inquiries, privacy, pricing and timing.", "nav": "faq" } -->
+<!-- @include partials/head.html -->
+<!-- @include partials/header.html -->
+<section class="section">
+  <div class="container">
+    <div class="section-head"><p class="eyebrow">FAQ</p><h1>Questions, answered plainly.</h1></div>
+    <div class="page-cols">
+      <div>
+        <h2>About Experience India</h2>
+        <div class="faq">
+          <details><summary>Who is Experience India?</summary><p>An India-focused experience company founded in the {{ brand.base }}. We design immersive cultural journeys and facilitate Medical Value Travel for international patients. Read <a href="/about">our story</a>.</p></details>
+          <details><summary>What exactly do you offer?</summary><p>Two things. Curated cultural and festival experiences, starting with {{ flagship.name }}. And non-clinical facilitation for patients considering healthcare in India: explaining the process, connecting you with providers, and coordinating accommodation, transport and documentation.</p></details>
+          <details><summary>Who is behind the company?</summary><p>{{ brand.founderName }}, {{ brand.founderTitle }}, with local partners in India. Meet the founder on the <a href="/about">About page</a>.</p></details>
+          <details><summary>How do I contact you?</summary><p>Email <a href="mailto:{{ brand.email }}">{{ brand.email }}</a> or use the <a href="/contact">contact page</a>. We reply personally.</p></details>
+          <details><summary>What happens after I submit an inquiry?</summary><p>A person reads it and replies, usually within {{ medical.responseTime }}. For the cultural list, you receive updates as things are confirmed. For medical inquiries, we explain the next step and what may be needed. Nothing is shared with anyone without your consent.</p></details>
+          <details><summary>How is my information handled?</summary><p>Inquiry forms collect only contact and preference details. We do not collect passport, payment or medical records through the website. Details are in our <a href="/privacy">privacy policy</a>.</p></details>
+        </div>
+        <h2 class="mt-4">Cultural experiences</h2>
+        <div class="faq">
+          <details><summary>How does the cultural trip work?</summary><p>Inquiry, consultation, reservation, preparation, experience. See <a href="/how-it-works">how it works</a>.</p></details>
+          <details><summary>When will pricing and the exact itinerary be confirmed?</summary><p>When hotels, partners and inclusions are locked in. Until then the itinerary is labelled draft and the interest list is no-obligation.</p></details>
+          <details><summary>Are flights and visas included?</summary><p>International flights are expected to be booked by you, with our guidance on timing. Visas are issued by the Government of India; we guide you through the process. Final inclusions will be published with pricing.</p></details>
+          <details><summary>How big is the group?</summary><p>Around {{ flagship.groupSize }} travelers for the first experience.</p></details>
+          <details><summary>What are the payment and cancellation terms?</summary><p>Published with pricing, before anyone commits. Joining the interest list involves no payment.</p></details>
+        </div>
+        <h2 class="mt-4">Medical Value Travel</h2>
+        <div class="faq">
+          <details><summary>Are you a hospital or medical provider?</summary><p>No. We are a facilitator. We do not diagnose, treat, prescribe or guarantee outcomes. All medical decisions are made by qualified providers and by you.</p></details>
+          <details><summary>How does the medical-travel service work?</summary><p>Inquiry, information and consent, provider connection, provider evaluation, quotation, your decision, visa and travel, non-clinical support in India, follow-up coordination. Every step is described on <a href="/how-medical-travel-works">how medical travel works</a>.</p></details>
+          <details><summary>Which hospitals do you work with?</summary><p>We connect patients with hospitals and providers appropriate to their inquiry. We do not publish rankings or "best hospital" claims, and we name partners only once relationships are verified.</p></details>
+          <details><summary>How much will treatment cost? How much will I save?</summary><p>Costs come from the provider, in writing, after evaluation. We do not publish savings percentages or price promises because they cannot be honest before a provider has seen your case.</p></details>
+          <details><summary>Should I send my medical records now?</summary><p>No. Please do not send records through the website or by ordinary email. When a provider needs them, we explain a secure way to share them, with your consent.</p></details>
+          <details><summary>Can a family member travel with me?</summary><p>Yes. India offers an e-Medical Attendant visa for companions. We help with the paperwork and logistics for attendants.</p></details>
+        </div>
+      </div>
+      <aside>
+        <div class="card card-tint-cultural"><h3>Join the {{ flagship.name }} list</h3><p class="small">Two minutes, no obligation.</p><a class="btn btn-cultural btn-block" href="/waitlist">Join</a></div>
+        <div class="card card-tint-medical"><h3>Start a medical inquiry</h3><p class="small">Private, no records, personal reply.</p><a class="btn btn-medical btn-block" href="/medical-inquiry">Start</a></div>
+        <div class="card"><h3>Still have a question?</h3><p class="small"><a href="/contact">Contact us</a> and a person will reply.</p></div>
+      </aside>
+    </div>
+  </div>
+</section>
+<!-- @include partials/footer.html -->

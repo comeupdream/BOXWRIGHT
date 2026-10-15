@@ -1,0 +1,42 @@
+{
+  "_comment": "Founder-editable settings. Everything here is injected into the pages at build time as {{ key.subkey }}. Re-run `npm run build` (or push to your host) after editing.",
+  "brand": {
+    "name": "Experience India",
+    "tagline": "Don't just visit India. Experience India.",
+    "url": "https://www.experienceindia.example",
+    "email": "hello@experienceindia.example",
+    "base": "USA",
+    "founderName": "The founder",
+    "founderTitle": "Founder, Experience India"
+  },
+  "social": {
+    "tiktok": "https://www.tiktok.com/@experienceindia",
+    "instagram": "https://www.instagram.com/experienceindia",
+    "youtube": "https://www.youtube.com/@experienceindia"
+  },
+  "forms": {
+    "_comment": "Leave actions empty to use Netlify Forms (zero setup on Netlify; export to CSV or pipe to Google Sheets with a Zap). Or paste a Formspree / Basin / Google Apps Script endpoint URL to post there instead.",
+    "waitlistAction": "",
+    "medicalAction": "",
+    "contactAction": ""
+  },
+  "analytics": {
+    "_comment": "Fill exactly one. GA4 measurement ID looks like G-XXXXXXXXXX. Plausible needs only your domain.",
+    "ga4": "",
+    "plausibleDomain": ""
+  },
+  "flagship": {
+    "code": "#001",
+    "name": "Ganesh Chaturthi 2027",
+    "slug": "ganesh-chaturthi-2027",
+    "days": "15",
+    "groupSize": "about 20",
+    "dates": "September 2027",
+    "datesNote": "Exact dates to be confirmed",
+    "pricingStatus": "Pricing will be published here once the itinerary, hotels and local partners are confirmed. Joining the interest list does not commit you to anything.",
+    "waitlistOpen": true
+  },
+  "medical": {
+    "responseTime": "2 business days"
+  }
+}

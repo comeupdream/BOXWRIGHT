@@ -1,0 +1,13 @@
+{
+  "name": "experience-india-site",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Experience India — static, mobile-first marketing site (cultural experiences + Medical Value Travel facilitation).",
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "dev": "node build.mjs --serve",
+    "check": "node build.mjs --check",
+    "bundle": "node build.mjs --bundle"
+  }
+}

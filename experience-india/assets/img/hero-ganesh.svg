@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Marigold garlands against a festival evening">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3b1631"/><stop offset=".5" stop-color="#8a2b3f"/><stop offset="1" stop-color="#e0862b"/></linearGradient>
+    <radialGradient id="c" cx=".5" cy=".55" r=".4"><stop offset="0" stop-color="#ffd27a" stop-opacity=".7"/><stop offset="1" stop-color="#ffd27a" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#sky)"/><rect width="1600" height="1000" fill="url(#c)"/>
+  <g fill="none" stroke="#f2b441" stroke-width="14" stroke-linecap="round" stroke-opacity=".9" stroke-dasharray="1 26">
+    <path d="M-40 120q400 260 840 0t840 0"/><path d="M-40 220q400 260 840 0t840 0" stroke-opacity=".6"/><path d="M-40 320q400 260 840 0t840 0" stroke-opacity=".35"/>
+  </g>
+  <g fill="#1d1410" opacity=".8"><path d="M0 780h140v-90h60v90h80v-160l40-40 40 40v160h90v-70h70v70h90v-120h60v120h80v-90h60v90h110v-150l50-50 50 50v150h90v-80h70v80h120v-110h60v110h140v220H0z"/></g>
+  <rect y="780" width="1600" height="220" fill="#140f0c" opacity=".9"/>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Calm dawn over water">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0a2f33"/><stop offset=".55" stop-color="#0f6b6e"/><stop offset="1" stop-color="#7fc2bd"/></linearGradient>
+    <radialGradient id="glow" cx=".3" cy=".55" r=".4"><stop offset="0" stop-color="#fff2cf" stop-opacity=".55"/><stop offset="1" stop-color="#fff2cf" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#sky)"/>
+  <rect width="1600" height="1000" fill="url(#glow)"/>
+  <g stroke="#ffffff" stroke-opacity=".12" fill="none" stroke-width="1.5">
+    <path d="M0 700c200-30 400 30 600 0s400-40 600 0 300 20 400 0"/><path d="M0 760c200-30 400 30 600 0s400-40 600 0 300 20 400 0"/><path d="M0 820c200-30 400 30 600 0s400-40 600 0 300 20 400 0"/><path d="M0 880c200-30 400 30 600 0s400-40 600 0 300 20 400 0"/>
+  </g>
+  <g fill="#08292c" opacity=".7"><path d="M0 660h160l40-20 60 20h120l30-40 40 40h200l60-30 70 30h180l40-25 50 25h230l60-40 70 40h190v340H0z"/></g>
+  <rect y="660" width="1600" height="340" fill="#08292c" opacity=".35"/>
+</svg>

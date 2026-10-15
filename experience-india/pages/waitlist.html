@@ -1,0 +1,48 @@
+<!--PAGE { "title": "Join the Ganesh Chaturthi 2027 interest list", "description": "Be first to see confirmed dates, itinerary and pricing for Experience India #001: Ganesh Chaturthi 2027. Two minutes, no obligation, no deposit.", "nav": "explore" } -->
+<!-- @include partials/head.html -->
+<!-- @include partials/header.html -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow cultural">Interest list</p>
+      <h1>Join the {{ flagship.name }} list.</h1>
+      <p class="lede">Be first to see confirmed dates, the final itinerary and pricing. Two minutes, no obligation, no deposit, and we will not ask for passport or payment details.</p>
+    </div>
+    <div class="page-cols">
+      <div>
+        <form class="form" name="cultural-waitlist" method="POST" action="{{ forms.waitlistAction }}" data-netlify="true" netlify-honeypot="bot-field" data-lead="waitlist" data-success="waitlist-success">
+          <input type="hidden" name="form-name" value="cultural-waitlist">
+          <input type="hidden" name="source" value="">
+          <p class="hp"><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+          <div class="field-row">
+            <div class="field"><label for="w-name">Name <span class="req">*</span></label><input id="w-name" name="name" required autocomplete="name"></div>
+            <div class="field"><label for="w-email">Email <span class="req">*</span></label><input id="w-email" name="email" type="email" required autocomplete="email"></div>
+          </div>
+          <div class="field-row">
+            <div class="field"><label for="w-country">Country <span class="req">*</span></label><input id="w-country" name="country" required autocomplete="country-name"></div>
+            <div class="field"><label for="w-travelers">Number of travelers <span class="req">*</span></label>
+              <select id="w-travelers" name="travelers" required><option value="">Choose</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5 or more</option></select></div>
+          </div>
+          <div class="field-row">
+            <div class="field"><label for="w-dates">Preferred travel dates</label><input id="w-dates" name="preferred_dates" placeholder="e.g. September 2027, flexible"></div>
+            <div class="field"><label for="w-interest">Interest in {{ flagship.name }} <span class="req">*</span></label>
+              <select id="w-interest" name="interest_level" required><option value="">Choose</option><option>Very interested, keep me updated</option><option>Interested, want to know pricing first</option><option>Curious about future experiences</option></select></div>
+          </div>
+          <div class="field"><label for="w-festivals">Other festivals you would consider (optional)</label><input id="w-festivals" name="other_festivals" placeholder="Diwali, Holi, Pongal, Durga Puja…"></div>
+          <div class="field"><label for="w-hear">How did you hear about us? <span class="req">*</span></label>
+            <select id="w-hear" name="heard_from" required><option value="">Choose</option><option>TikTok</option><option>Instagram</option><option>YouTube</option><option>A friend</option><option>Search</option><option>Other</option></select></div>
+          <div class="field"><label for="w-msg">Message (optional)</label><textarea id="w-msg" name="message" placeholder="Anything you'd like us to know."></textarea></div>
+          <label class="check"><input type="checkbox" name="consent" value="yes" required> <span>Email me about {{ flagship.name }} and future experiences. Unsubscribe any time. <span class="req">*</span></span></label>
+          <button class="btn btn-cultural btn-lg" type="submit" data-track="waitlist_submit">Join the interest list</button>
+          <p class="fine">We will never ask for passport or payment details at this stage. See our <a href="/privacy">privacy policy</a>.</p>
+        </form>
+        <div class="form-success" id="waitlist-success"><h3>You're on the list.</h3><p>Thank you. We will email you as dates, itinerary and pricing are confirmed. In the meantime, follow along on TikTok, Instagram and YouTube.</p></div>
+      </div>
+      <aside>
+        <div class="card card-tint-cultural"><p class="eyebrow cultural">Experience India {{ flagship.code }}</p><h3>{{ flagship.name }}</h3><p class="small">{{ flagship.days }} days, {{ flagship.groupSize }} travelers, {{ flagship.dates }} ({{ flagship.datesNote }}).</p><a class="small" href="/{{ flagship.slug }}">See the experience</a></div>
+        <div class="card"><h3>What happens next</h3><p class="small">We reply personally, and email you when something is confirmed: dates first, then the itinerary, then pricing. Interest-list members are invited to reserve before anyone else.</p></div>
+      </aside>
+    </div>
+  </div>
+</section>
+<!-- @include partials/footer.html -->

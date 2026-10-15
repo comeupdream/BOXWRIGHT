@@ -1,0 +1,62 @@
+<!--PAGE { "title": "Start a private medical inquiry", "description": "Request information about Medical Value Travel to India. A short, private form, no medical records, a personal reply within two business days.", "nav": "medical" } -->
+<!-- @include partials/head.html -->
+<!-- @include partials/header.html -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow medical">Medical inquiry</p>
+      <h1>Request information.</h1>
+      <p class="lede">Tell us, in broad terms, what you are considering. A person will reply, usually within {{ medical.responseTime }}, to explain the next step. No obligation.</p>
+    </div>
+    <div class="page-cols">
+      <div>
+        <form class="form medical" name="medical-inquiry" method="POST" action="{{ forms.medicalAction }}" data-netlify="true" netlify-honeypot="bot-field" data-lead="medical" data-success="medical-success">
+          <input type="hidden" name="form-name" value="medical-inquiry">
+          <input type="hidden" name="source" value="">
+          <p class="hp"><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+          <fieldset>
+            <legend>About you</legend>
+            <div class="field-row">
+              <div class="field"><label for="m-name">Name <span class="req">*</span></label><input id="m-name" name="name" required autocomplete="name"></div>
+              <div class="field"><label for="m-email">Email <span class="req">*</span></label><input id="m-email" name="email" type="email" required autocomplete="email"></div>
+            </div>
+            <div class="field-row">
+              <div class="field"><label for="m-country">Country of residence <span class="req">*</span></label><input id="m-country" name="country" required autocomplete="country-name"><span class="hint">Add nationality if it differs, for visa purposes.</span></div>
+              <div class="field"><label for="m-contact">Preferred contact method <span class="req">*</span></label>
+                <select id="m-contact" name="contact_method" required>
+                  <option value="">Choose one</option><option>Email</option><option>Phone call</option><option>WhatsApp</option><option>Video call</option>
+                </select></div>
+            </div>
+            <div class="field"><label for="m-phone">Phone or WhatsApp number (optional)</label><input id="m-phone" name="phone" type="tel" autocomplete="tel"></div>
+          </fieldset>
+          <fieldset>
+            <legend>About the inquiry</legend>
+            <div class="field"><label for="m-area">Broad area of treatment or service sought <span class="req">*</span></label>
+              <select id="m-area" name="treatment_area" required>
+                <option value="">Choose the closest</option>
+                <option>Cardiology / cardiac surgery</option><option>Orthopaedics / joint replacement</option><option>Oncology</option><option>Fertility / IVF</option><option>Dental</option><option>Ophthalmology</option><option>Cosmetic / reconstructive</option><option>Bariatric / metabolic</option><option>Neurology / spine</option><option>Transplant</option><option>Wellness / rehabilitation</option><option>General health check</option><option>Other / not sure yet</option>
+              </select>
+              <span class="hint">Just the general area. Please do not include diagnoses, reports or medical records here.</span></div>
+            <div class="field-row">
+              <div class="field"><label for="m-timing">Preferred timing</label>
+                <select id="m-timing" name="timing"><option value="">Not sure yet</option><option>As soon as possible</option><option>Within 3 months</option><option>3 to 6 months</option><option>6 to 12 months</option><option>Exploring for now</option></select></div>
+              <div class="field"><label for="m-attend">Traveling alone or with attendant(s)?</label>
+                <select id="m-attend" name="attendants"><option value="">Not sure yet</option><option>Alone</option><option>With one attendant</option><option>With two or more attendants</option></select></div>
+            </div>
+            <div class="field"><label for="m-msg">Anything else you would like us to know (optional)</label><textarea id="m-msg" name="message" placeholder="Questions, concerns, languages spoken, anything that helps us reply well."></textarea></div>
+          </fieldset>
+          <label class="check"><input type="checkbox" name="consent" value="yes" required> <span>I understand that {{ brand.name }} is a facilitator, not a medical provider, and that it does not diagnose, treat or guarantee outcomes. I consent to being contacted about this inquiry. <span class="req">*</span></span></label>
+          <button class="btn btn-medical btn-lg" type="submit" data-track="medical_submit">Send my inquiry</button>
+          <p class="fine">Your inquiry is private and handled as described in our <a href="/privacy">privacy policy</a>. If medical records are needed later, we will explain a secure way to share them with a provider, with your explicit consent. Please do not email or upload medical records at this stage.</p>
+        </form>
+        <div class="form-success" id="medical-success"><h3>Thank you. We have your inquiry.</h3><p>A person will reply within {{ medical.responseTime }} to explain the next step. If your situation is urgent, please contact a local doctor or emergency service. We are not able to provide medical advice.</p></div>
+      </div>
+      <aside>
+        <!-- @include partials/mvt-disclaimer.html -->
+        <div class="card"><h3>What happens next</h3><ol class="small" style="padding-left:18px;margin:0"><li>A person reads your inquiry.</li><li>We reply with an explanation of the process and what a provider may need.</li><li>Only with your consent do we connect you with a provider.</li></ol></div>
+        <div class="card"><h3>New to medical travel?</h3><p class="small">Read <a href="/how-medical-travel-works">how medical travel works</a> first. It walks through every step and who is responsible for what.</p></div>
+      </aside>
+    </div>
+  </div>
+</section>
+<!-- @include partials/footer.html -->
